@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#120c24">
+  <title>X-Comix World · Petecastic Productions</title>
+  <meta name="description" content="X-Comix World from Petecastic Productions. Follow on X, play the arcade, and shop X-COMIX Vol. 1 on Amazon.">
+  <link rel="icon" href="assets/favicon.ico" sizes="any">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <style>
+    :root {
+      --bg: #120c24;
+      --ink: #fff;
+      --muted: #c9c3d8;
+      --gold: #ffd400;
+      --pink: #ff2e63;
+      --card: #1d1633;
+      --btn: #ffd400;
+      --btn-ink: #120c24;
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--ink);
+      min-height: 100%;
+    }
+    body {
+      font: 16px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif;
+      padding: max(16px, env(safe-area-inset-top)) 20px max(24px, env(safe-area-inset-bottom));
+    }
+    .wrap {
+      width: min(420px, 100%);
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .logo {
+      width: min(92%, 340px);
+      height: auto;
+      display: block;
+      margin: 4px 0 0;
+    }
+    header {
+      text-align: center;
+      margin-top: -8px;
+    }
+    h1 {
+      margin: 0;
+      font: 900 clamp(1.7rem, 8vw, 2.15rem)/1 Impact, Haettenschweiler, "Arial Black", sans-serif;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      text-shadow: 2px 2px 0 var(--pink);
+    }
+    h1 span { color: var(--gold); }
+    .studio {
+      margin: 8px 0 0;
+      font: 800 0.78rem/1.2 system-ui, sans-serif;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+    .tag {
+      margin: 10px 0 0;
+      color: var(--muted);
+      font-size: 0.98rem;
+    }
+    nav {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin: 24px 0 0;
+    }
+    a.btn {
+      display: block;
+      width: 100%;
+      text-decoration: none;
+      color: var(--btn-ink);
+      background: var(--btn);
+      border: 3px solid #000;
+      border-radius: 16px;
+      padding: 14px 16px;
+      text-align: center;
+      box-shadow: 4px 4px 0 var(--pink);
+      min-height: 64px;
+    }
+    a.btn:hover, a.btn:focus-visible {
+      transform: translate(-2px, -2px);
+      box-shadow: 6px 6px 0 var(--pink);
+    }
+    a.btn:focus-visible {
+      outline: 3px solid var(--gold);
+      outline-offset: 3px;
+    }
+    a.btn:active {
+      transform: translate(2px, 2px);
+      box-shadow: 2px 2px 0 var(--pink);
+    }
+    a.btn strong {
+      display: block;
+      font: 900 1.15rem/1.1 Impact, Haettenschweiler, "Arial Black", sans-serif;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+    a.btn small {
+      display: block;
+      margin-top: 4px;
+      font: 650 0.82rem/1.2 system-ui, sans-serif;
+      color: #3a2a00;
+    }
+    a.btn.arcade {
+      background: linear-gradient(#fff, #d7dcff);
+    }
+    a.btn.shop {
+      background: linear-gradient(#7dff5a, #2ec84a);
+    }
+    footer {
+      margin-top: 22px;
+      text-align: center;
+      color: #8d86a3;
+      font-size: 0.78rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <picture>
+      <source type="image/webp" srcset="assets/logo.webp">
+      <img class="logo" src="assets/logo.jpg" width="1200" height="887" alt="X-COMIX">
+    </picture>
+    <header>
+      <h1>X-Comix <span>World</span></h1>
+      <p class="studio">Petecastic Productions</p>
+      <p class="tag">Comics, games, and the book. See you in another timeline.</p>
+    </header>
+    <nav aria-label="X-Comix World links">
+      <a class="btn" href="https://x.com/XComixWorld">
+        <strong>Follow on X</strong>
+        <small>@XComixWorld</small>
+      </a>
+      <a class="btn arcade" href="https://petecastic.github.io/xcomix-memory/">
+        <strong>Play the Arcade</strong>
+        <small>Free games in the 3 AM Valley</small>
+      </a>
+      <a class="btn shop" href="https://www.amazon.com/dp/B0HSLMY7HY">
+        <strong>Shop on Amazon</strong>
+        <small>X-COMIX Vol. 1 paperback</small>
+      </a>
+    </nav>
+    <footer>© 2026 Petecastic Productions LLC</footer>
+  </div>
+</body>
+</html>
